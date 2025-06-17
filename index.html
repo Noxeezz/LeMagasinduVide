@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Le Magasin du Vide</title>
+  <title>Le Magasin du Vide - Boutique qui vend du rien | Nothing Store</title>
+  <meta name="description" content="Découvrez Le Magasin du Vide, la seule boutique en ligne où vous pouvez acheter du Rien. Concept absurde, idées cadeaux inutiles, et humour garanti. Buy Nothing, really." />
+  <meta name="keywords" content="rien à vendre, boutique du vide, acheter du rien, magasin inutile, cadeaux absurdes, nothing store, buy nothing, useless gift, funny concept store" />
   <style>
     body {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -47,6 +49,20 @@
     button:hover {
       background-color: #005ea6;
     }
+    .ranking {
+      margin-top: 2rem;
+      background: white;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgb(0 0 0 / 0.1);
+    }
+    .ranking h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .ranking ol {
+      padding-left: 1.2rem;
+    }
     footer {
       text-align: center;
       font-size: 0.85rem;
@@ -58,7 +74,7 @@
 <body>
   <header>
     <h1>Le Magasin du Vide</h1>
-    <p>Bienvenue ! Ici, on vend du Rien. Vraiment rien.</p>
+    <p>Bienvenue ! Ici, on vend du Rien. Vraiment rien. Buy Nothing. Experience Absurdity.</p>
   </header>
 
   <div class="product">
@@ -109,8 +125,103 @@
     </form>
   </div>
 
+  <div class="ranking">
+    <div class="podium">
+  <h2>🏆 Podium des acheteurs de Rien</h2>
+  <div class="podium-wrapper">
+    <div class="podium-place second">
+      <div class="amount">10 €</div>
+      <div class="name">Jade BAZIN</div>
+      <div class="step">2ᵉ</div>
+    </div>
+    <div class="podium-place first">
+      <div class="amount">50 €</div>
+      <div class="name">Christophe DUMAIN</div>
+      <div class="step">1ᵉʳ</div>
+    </div>
+    <div class="podium-place third">
+      <div class="amount">10 €</div>
+      <div class="name">Jean-Marc MODI</div>
+      <div class="step">3ᵉ</div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .podium {
+    text-align: center;
+    margin-top: 3rem;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .podium h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  .podium-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1.5rem;
+  }
+
+  .podium-place {
+    width: 90px;
+    background-color: #eee;
+    border-radius: 8px 8px 0 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 1rem;
+    color: #333;
+  }
+
+  .podium-place .amount {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .podium-place .name {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .podium-place .step {
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.05);
+    padding: 0.2rem 0.5rem;
+    border-radius: 999px;
+    margin-bottom: 0.5rem;
+  }
+
+  .podium-place.first {
+    background-color: gold;
+    height: 160px;
+  }
+
+  .podium-place.second {
+    background-color: silver;
+    height: 130px;
+  }
+
+  .podium-place.third {
+    background-color: #cd7f32; /* bronze */
+    height: 100px;
+  }
+</style>
+
+  </div>
+
   <footer>
-    &copy; 2025 Le Magasin du Vide
+    &copy; 2025 Le Magasin du Vide – L'art de vendre rien. The art of selling nothing.
   </footer>
 </body>
 </html>
