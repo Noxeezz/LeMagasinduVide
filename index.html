@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Le Magasin du Vide</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      background: #f9f9f9;
+      color: #222;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-weight: 700;
+      color: #555;
+    }
+    .product {
+      background: white;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgb(0 0 0 / 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .product-info {
+      font-size: 1.1rem;
+    }
+    button {
+      background-color: #0070ba;
+      border: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    button:hover {
+      background-color: #005ea6;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #999;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Le Magasin du Vide</h1>
+    <p>Bienvenue ! Ici, on vend du Rien. Vraiment rien.</p>
+  </header>
+
+  <div class="product">
+    <div class="product-info">Un peu de Rien — 1 €</div>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_xclick" />
+      <input type="hidden" name="business" value="trasematt@gmail.com" />
+      <input type="hidden" name="item_name" value="Un peu de Rien" />
+      <input type="hidden" name="amount" value="1.00" />
+      <input type="hidden" name="currency_code" value="EUR" />
+      <button type="submit">Acheter</button>
+    </form>
+  </div>
+
+  <div class="product">
+    <div class="product-info">Rien de Spécial — 5 €</div>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_xclick" />
+      <input type="hidden" name="business" value="trasematt@gmail.com" />
+      <input type="hidden" name="item_name" value="Rien de Spécial" />
+      <input type="hidden" name="amount" value="5.00" />
+      <input type="hidden" name="currency_code" value="EUR" />
+      <button type="submit">Acheter</button>
+    </form>
+  </div>
+
+  <div class="product">
+    <div class="product-info">Rien Absolu — 10 €</div>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_xclick" />
+      <input type="hidden" name="business" value="trasematt@gmail.com" />
+      <input type="hidden" name="item_name" value="Rien Absolu" />
+      <input type="hidden" name="amount" value="10.00" />
+      <input type="hidden" name="currency_code" value="EUR" />
+      <button type="submit">Acheter</button>
+    </form>
+  </div>
+
+  <div class="product">
+    <div class="product-info">Rien Cosmique — 50 €</div>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_xclick" />
+      <input type="hidden" name="business" value="trasematt@gmail.com" />
+      <input type="hidden" name="item_name" value="Rien Cosmique" />
+      <input type="hidden" name="amount" value="50.00" />
+      <input type="hidden" name="currency_code" value="EUR" />
+      <button type="submit">Acheter</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Le Magasin du Vide
+  </footer>
+</body>
+</html>
